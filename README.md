@@ -7,6 +7,9 @@ The main goal is to aid in the development of distributed configurations in the 
     # Initialize a new empty repository
     dot-init
 
+    # Setup the shared dot-team repository
+    dot-setup
+
     # Commit changes
     dot-config add <file>
     dot-config commit
