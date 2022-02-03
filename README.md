@@ -4,10 +4,14 @@ The main goal is to aid in the development of distributed configurations in the 
 
 ## Usage
 
+    # Initialize a new empty repository
+    dot-init
+
+    # Commit changes
     dot-config add <file>
     dot-config commit
 
-Since this is a command used very often, it's advised that you create a simple alias:
+Since `dot-config` is a command used very often, it's advised that you create a simple alias:
 
     alias c=dot-config
 
