@@ -6,3 +6,4 @@ export GIT_DIR="$DOT_FILES"/.git/
 export GIT_WORK_TREE=$HOME
 
 git ls-files --deleted | xargs git checkout
+exec git diff --stat
