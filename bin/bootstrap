@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DOT_FILES="${XDG_DATA_HOME:-$HOME/.local/share}/dot-files"
+
+"$DOT_FILES"/.config/dot-tools/bootstrap
