@@ -1,0 +1,8 @@
+#!/bin/sh
+
+DOT_FILES="${XDG_DATA_HOME:-$HOME/.local/share}/dot-files"
+
+export GIT_DIR="$DOT_FILES"/.git/
+export GIT_WORK_TREE=$HOME
+
+git ls-files --deleted | xargs git checkout
