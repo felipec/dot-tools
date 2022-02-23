@@ -2,6 +2,6 @@
 
 DOT_FILES="${XDG_DATA_HOME:-$HOME/.local/share}/dot-files"
 
-git clone https://github.com/felipec/dot-team.git "$DOT_FILES"/
+git clone ${1-https://github.com/felipec/dot-team.git} "$DOT_FILES"/
 
 exec dot-bootstrap
