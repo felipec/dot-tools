@@ -2,4 +2,11 @@
 
 DOT_FILES="${XDG_DATA_HOME:-$HOME/.local/share}/dot-files"
 
-"$DOT_FILES"/.config/dot-tools/bootstrap
+if [[ -x "$DOT_FILES"/.config/dot-tools/bootstrap ]]; then
+  exec "$DOT_FILES"/.config/dot-tools/bootstrap
+elif [[ -x "$DOT_FILES"/.config/yadm/bootstrap ]]; then
+  dot-checkout
+  exec "$DOT_FILES"/.config/yadm/bootstrap
+else
+  exec dot-checkout
+fi
