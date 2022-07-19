@@ -1,0 +1,5 @@
+#compdef dot-config
+
+local service=git
+
+_git
